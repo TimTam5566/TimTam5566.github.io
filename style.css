@@ -1,3 +1,20 @@
+/* Root variables are used so that we can have a single place
+in our code to declare things like colours and fonts, as well as
+values we reuse a lot (like our spacing scale). */
+:root {
+    --brand: #8f8393;
+    --action: #889484;
+    --white: #ffffff;
+    --base-light:#dfd3e3;
+    --base-dark: #0d0711;
+    --black: #111111;
+    --font-default: "Inter", sans-serif;
+    --font-feature: "Rubik", sans-serif;
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 32px;
+    --space-xl: 64px;
+}
 
 
 /* CSS Reset  (Base Styles)
@@ -58,3 +75,216 @@ html {
      font: inherit;
  }
  /* ---End CSS Reset --- */
+
+ .flex {
+     display: flex;
+ }
+
+ .padding-small {
+     padding: var(--space-small);
+ }
+
+ .padding-medium {
+     padding: var(--space-medium);
+ }
+
+ .padding-large {
+     padding: var(--space-large);
+ }
+
+ .padding-xl {
+     padding: var(--space-xl);
+ }
+
+ /* ---End Utility Classes--- */
+
+ /* Component Classes - reusable styles for specific elements */
+
+ .icon {
+     width: var(--space-large);
+ }
+
+ .button {
+     border-radius: 4px;
+     background-color: #ffa300;
+    /* I can combine root variables with combo rules!
+    Here I'm setting top/bottom to small, and left/right
+    to the medium space setting. */
+     padding: var(--space-small) var(--space-medium);
+     text-decoration: none;
+     color: black;
+     border:none;
+     box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.1);
+     transition: all 0.2s ease-in-out; 
+ }
+
+ .button:hover{
+    box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.3), 
+                0 0 var(--space-large) rgba(0,0,0,0.1) ;
+ }
+
+ /* ---End Component Classes--- */
+
+ /* Page Styles */
+ header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: var(--space-small) var(--space-medium) 0;
+ }
+
+ .logo {
+     max-height: 100px;
+     width: auto;
+ }
+
+ /* Default for mobile - we'll add a media query
+ to change the direction to 'row' on bigger screens */
+ header nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+ }
+
+ nav a{
+    text-decoration:none;
+    color: var(--black);
+ }
+
+ /* This is how we change the style on hover! */
+  nav a:hover{
+    color: var(--brand);
+ }
+
+ /* Add a margin around the outside of everything 
+ and gaps in between our sections. */
+ main {
+     display: flex;
+     flex-direction: column;
+     gap: var(--space-medium);
+     justify-content: center;
+     padding:var(--space-medium);
+ }
+
+ /* Styles for hero section */
+ .hero {
+     background-color: var(--brand);
+     color: var(--white);
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     border-radius: var(--space-small);
+     padding:var(--space-large);
+     gap:var(--space-medium);
+    /* This is an example of a NESTED CSS selector. 
+    It's a different way of targeting children, by putting
+    the child inside the brackets for the parent rule.
+    This achieves the same result as adding a rule directly
+    for .hero .button {} */
+     .button{
+        margin-top: var(--space-small);
+     }
+}
+ h1{
+    font-size: 2em;
+    text-wrap:balance;
+ }
+
+ h1 span{
+    color:var(--action);
+ }
+ /* Styles for 3 boxes section */
+ .article-container {  /* This is the invisible section around the articles */
+    display:flex;
+    /*We want the default to be column, then use a media query for larger screens*/
+    flex-direction: column;
+    gap: var(--space-medium);
+ }
+
+ article {
+     background-color: var(--base-light);
+     border-radius: var(--space-medium);
+     display:flex;
+     flex-direction:column; 
+     align-items:flex-start;
+     gap:var(--space-small);
+
+ }
+
+ article .icon {
+     width: 24px;
+ }
+
+ article .button{
+    margin-top:var(--space-medium);
+ }
+
+ /* Contact Section */
+ .contact{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+ }
+
+ .contact form{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    width:100%;
+ }
+
+ footer{
+    margin-top: var(--space-medium);
+ }
+ /* Note that here we are making the ul the flex container,
+ not the nav. This is because the items are the <li> elements,
+ and the parent of those elements is ul. This selector means
+ "ul elements that are inside nav elements that are inside footer elements"  */
+ footer nav ul{
+    display:flex;
+    justify-content:center;
+    gap:var(--space-medium);
+ }
+
+ .copyright-bar{
+    background-color:var(--brand);
+    color:var(--white);
+    text-align:center;
+    padding:var(--space-small);
+    margin-top:var(--space-small);
+ }
+
+ /* Responsive media queries - 
+ these allow us to add different styles at different sizes */
+@media only screen and (min-width: 768px) {
+    header nav ul{
+        flex-direction:row;
+        gap:var(--space-large);
+        font-size:1.2em;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+
+    .contact{
+        padding:var(--space-large);
+        gap:var(--space-medium);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .hero{
+        padding:var(--space-xl);
+    }
+
+    h1{
+        font-size:3em;
+    }
+
+     .article-container {
+        flex-direction:row;
+     }
+
+     .contact form{
+        max-width:50%;
+     }
+}

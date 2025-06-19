@@ -13,18 +13,19 @@
 <body>
     <header>
         <img src="images/images/Initial logo.png" alt="Logo " class="logo">
+       <nav>
         <ul>
-            <li>
-                <a href="index.html">Home</a>
+             <li>
+                <a href="index.html"><class=btn>Home</a>
             </li>
             <li>
-                <a href="Projects/index.html/projects">Projects</a>
+                <a href="Projects/index.html/projects"><class=btn>Projects</a>
             </li>
             <li>
-                <a href="Contact page/index.html/contacts">Contact</a>
+                <a href="Contact page/index.html/contacts"><class=btn>Contact</a>
             </li>
         </ul>
-
+        </nav>
     </header>
 
     <main>
