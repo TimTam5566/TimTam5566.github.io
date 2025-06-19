@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Healy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/images/Initial logo.png" alt="Logo " class="logo">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Projects/index.html/projects">Projects</a>
+            </li>
+            <li>
+                <a href="Contact page/index.html/contacts">Contact</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="contact" id="contact">
+            <h1>Get in Touch</h1>
+            <form>
+                <label for="Name">Name</label>
+                <input type="text" id="your-name">
+                <label for="email">Email</label>
+                <input type="text" id="your-email">
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message-text" id="message" rows="10"></textarea>
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="" alt="linked in" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/github.svg" alt="Github" class="icon"></a></li>
+            </ul>
+        </nav>
+        <div class="copyright-bar"><p>&copy; Tammy Healy</p></div>
+    </footer>
+</body>

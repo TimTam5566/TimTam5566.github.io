@@ -14,45 +14,38 @@
     <header>
         <img src="images/images/Initial logo.png" alt="Logo " class="logo">
         <ul>
-            <li>
+             <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="Projects/index.html/projects">Projects</a>
+                <a href="#">projects</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">contact</a>
             </li>
         </ul>
 
     </header>
 
     <main>
-        <section class="hero">  
+        <section>  
             <article>
-                <img src="images/images/Photo Tammy.jpg" 
-                    alt="photo of a female with blond curly hair with grey wisdom streaks and brown eyes" 
-                    class="photo"
-                >
                     <h1>
-                    Tammy Healy
+                    Projects
                     </h1>
-                        <p>
-                        Insert info about myself
-                        </p>
             </article>
         </Section>
         <Section>
             <article>
-                <img src="images/images/Dragonfly.jpg" 
-                alt="painting of a dragonfly hovering above a flower bed in pastel colours" 
+                <img src="#" 
+                alt="image to be decided" 
                 class="photo"
                 >
                     <h2>
-                        Hobbies
+                        Project
                     </h2>
                         <p>
-                            Insert info about hobbies
+                            Coming Soon
                         </p>
             </article>
         </Section>
@@ -63,16 +56,32 @@
                     class="photo"
                 >
                     <h2>
-                        Career so Far
+                        Project
                     </h2>
                         <p>
-                            Insert info about career so Far
+                            Coming Soon
                         </p>
             </article>
    
         </section>
-
+        <Section>
+            <article>
+                <img 
+                    src="#" 
+                    alt="image to be decided" 
+                    class="photo"
+                >
+                    <h2>
+                        Project
+                    </h2>
+                        <p>
+                            Coming Soon
+                        </p>
+            </article>
+   
+        </section>
     </main>
+</body>
 
     <footer>
         <nav>
