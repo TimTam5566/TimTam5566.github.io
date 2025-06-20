@@ -102,11 +102,15 @@ html {
 
  .icon {
      width: var(--space-large);
+ } 
+
+ .photo {
+    width: var(--space-large)
  }
 
  .button {
      border-radius: 4px;
-     background-color: #ffa300;
+     background-color: #88a300;
     /* I can combine root variables with combo rules!
     Here I'm setting top/bottom to small, and left/right
     to the medium space setting. */
@@ -136,6 +140,11 @@ html {
  .logo {
      max-height: 100px;
      width: auto;
+ }
+
+ .photo {
+    max-height: 500px;
+    width: auto;
  }
 
  /* Default for mobile - we'll add a media query
@@ -171,8 +180,8 @@ html {
      background-color: var(--brand);
      color: var(--white);
      display: flex;
-     flex-direction: column;
-     align-items: flex-start;
+     flex-direction: row;
+     align-items: stretch;
      border-radius: var(--space-small);
      padding:var(--space-large);
      gap:var(--space-medium);
@@ -187,7 +196,7 @@ html {
 }
  h1{
     font-size: 2em;
-    text-wrap:balance;
+    text-wrap: balance;
  }
 
  h1 span{
@@ -215,9 +224,14 @@ html {
      width: 24px;
  }
 
+ article .photo {
+    width: 192px;
+ }
  article .button{
     margin-top:var(--space-medium);
  }
+
+ article 
 
  /* Contact Section */
  .contact{

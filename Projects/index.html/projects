@@ -16,28 +16,26 @@
         <nav>
         <ul>
              <li>
-                <a href="index.html"><class=btn>Home</a>
+                <a href="index.html"><class=button>Home</a>
             </li>
             <li>
-                <a href="Projects/index.html/projects"><class=btn>Projects</a>
+                <a href="Projects/index.html/projects"><class=button>Projects</a>
             </li>
             <li>
-                <a href="Contact page/index.html/contacts"><class=btn>Contact</a>
+                <a href="Contact page/index.html/contacts"><class=button>Contact</a>
             </li>
         </ul>
         </nav>
     </header>
 
     <main>
-        <section>  
-            <article>
+        <section class="hero">  
                     <h1>
                     Projects
                     </h1>
-            </article>
         </Section>
-        <Section>
-            <article>
+        <Section class="article-container">
+            <article class="padding-large">
                 <img src="#" 
                 alt="image to be decided" 
                 class="photo"
@@ -49,8 +47,7 @@
                             Coming Soon
                         </p>
             </article>
-        </Section>
-            <article>
+            <article class="padding-large">
                 <img 
                     src="#" 
                     alt="image to be decided" 
@@ -63,10 +60,20 @@
                             Coming Soon
                         </p>
             </article>
-   
-        </section>
-        <Section>
-            <article>
+            <article class="padding-large">
+                <img 
+                    src="#" 
+                    alt="image to be decided" 
+                    class="photo"
+                >
+                    <h2>
+                        Project
+                    </h2>
+                        <p>
+                            Coming Soon
+                        </p>
+            </article>
+             <article class="padding-large">
                 <img 
                     src="#" 
                     alt="image to be decided" 
