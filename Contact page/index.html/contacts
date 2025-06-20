@@ -44,17 +44,21 @@
         </section>
     </main>
 
+    </body>
+
     <footer>
         <nav>
             <ul>
                 <li>
                     <a href="#">
-                        <img src="" alt="linked in" class="icon">
+                        <img src="images/images/linked_in_logo.png" alt="linkedin logo blue square with white lower case letter i and letter n" class="logo">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/github.svg" alt="Github" class="icon"></a></li>
+                        <img src="images/images/github_git_icon_.png" alt="github logo black and white image, black outline of a cats head and body, in a standing position with" class="logo">
+                    </a>
+                </li>
             </ul>
         </nav>
         <div class="copyright-bar"><p>&copy; Tammy Healy</p></div>
