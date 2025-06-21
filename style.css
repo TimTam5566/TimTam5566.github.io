@@ -5,7 +5,7 @@ values we reuse a lot (like our spacing scale). */
     --brand: #8f8393;
     --action: #889484;
     --white: #ffffff;
-    --base-light:#dfd3e3;
+    --base-light: #dfd3e3;
     --base-dark: #0d0711;
     --black: #111111;
     --font-default: "Inter", sans-serif;
@@ -22,283 +22,294 @@ These are the styles we are applying to make sure that
 browsers don't do silly or unexpected things, and our defaults are
 just a BIT less ugly! */
 html {
-     box-sizing: border-box;
-     font-size: 16px;
-     font-family: "Inter", sans-serif;
-     color: var(--black);
-     scroll-behavior: smooth;
- }
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    scroll-behavior: smooth;
+}
 
- *,
- *:before,
- *:after {
-     box-sizing: inherit;
- }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
-     font-family: "Rubik", sans-serif;
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rubik", sans-serif;
+}
 
- body,
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p,
- ol,
- ul {
-     margin: 0;
-     padding: 0;
- }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
 
- ol,
- ul {
-     list-style: none;
- }
+ol,
+ul {
+    list-style: none;
+}
 
- img {
-     max-width: 100%;
-     height: auto;
- }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
- input,
- button,
- textarea,
- select {
-     font: inherit;
- }
- /* ---End CSS Reset --- */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
 
- .flex {
-     display: flex;
- }
+/* ---End CSS Reset --- */
 
- .padding-small {
-     padding: var(--space-small);
- }
+.flex {
+    display: flex;
+}
 
- .padding-medium {
-     padding: var(--space-medium);
- }
+.padding-small {
+    padding: var(--space-small);
+}
 
- .padding-large {
-     padding: var(--space-large);
- }
+.padding-medium {
+    padding: var(--space-medium);
+}
 
- .padding-xl {
-     padding: var(--space-xl);
- }
+.padding-large {
+    padding: var(--space-large);
+}
 
- /* ---End Utility Classes--- */
+.padding-xl {
+    padding: var(--space-xl);
+}
 
- /* Component Classes - reusable styles for specific elements */
+/* ---End Utility Classes--- */
 
- .icon {
-     width: var(--space-large);
- } 
+/* Component Classes - reusable styles for specific elements */
 
- .photo {
+.icon {
+    width: var(--space-large);
+}
+
+.photo {
     width: var(--space-large)
- }
+}
 
- .button {
-     border-radius: 4px;
-     background-color: #88a300;
+.button {
+    border-radius: 4px;
+    background-color: #88a300;
     /* I can combine root variables with combo rules!
     Here I'm setting top/bottom to small, and left/right
     to the medium space setting. */
-     padding: var(--space-small) var(--space-medium);
-     text-decoration: none;
-     color: black;
-     border:none;
-     box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.1);
-     transition: all 0.2s ease-in-out; 
- }
+    padding: var(--space-small) var(--space-medium);
+    text-decoration: none;
+    color: black;
+    border: none;
+    box-shadow: 0 0 var(--space-medium) rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
 
- .button:hover{
-    box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.3), 
-                0 0 var(--space-large) rgba(0,0,0,0.1) ;
- }
+.button:hover {
+    box-shadow: 0 0 var(--space-medium) rgba(0, 0, 0, 0.3),
+        0 0 var(--space-large) rgba(0, 0, 0, 0.1);
+}
 
- /* ---End Component Classes--- */
+/* ---End Component Classes--- */
 
- /* Page Styles */
- header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+/* Page Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: var(--space-small) var(--space-medium) 0;
- }
+}
 
- .logo {
-     max-height: 100px;
-     width: auto;
- }
+.logo {
+    max-height: 100px;
+    width: auto;
+}
 
- .photo {
+.photo {
     max-height: 500px;
     width: auto;
- }
+}
 
- /* Default for mobile - we'll add a media query
+
+/* Default for mobile - we'll add a media query
  to change the direction to 'row' on bigger screens */
- header nav ul{
-    display:flex;
-    flex-direction:column;
+header nav ul {
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
- }
+}
 
- nav a{
-    text-decoration:none;
+nav a {
+    text-decoration: none;
     color: var(--black);
- }
+}
 
- /* This is how we change the style on hover! */
-  nav a:hover{
+/* This is how we change the style on hover! */
+nav a:hover {
     color: var(--brand);
- }
+}
 
- /* Add a margin around the outside of everything 
+/* Add a margin around the outside of everything 
  and gaps in between our sections. */
- main {
-     display: flex;
-     flex-direction: column;
-     gap: var(--space-medium);
-     justify-content: center;
-     padding:var(--space-medium);
- }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-medium);
+    justify-content: center;
+    padding: var(--space-medium);
+}
 
- /* Styles for hero section */
- .hero {
-     background-color: var(--brand);
-     color: var(--white);
-     display: flex;
-     flex-direction: row;
-     align-items: stretch;
-     border-radius: var(--space-small);
-     padding:var(--space-large);
-     gap:var(--space-medium);
+/* Styles for hero section */
+.hero {
+    background-color: var(--brand);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: var(--space-small);
+    padding: var(--space-large);
+    gap: var(--space-medium);
+
     /* This is an example of a NESTED CSS selector. 
     It's a different way of targeting children, by putting
     the child inside the brackets for the parent rule.
     This achieves the same result as adding a rule directly
     for .hero .button {} */
-     .button{
+    .button {
         margin-top: var(--space-small);
-     }
+    }
 }
- h1{
+
+h1 {
     font-size: 2em;
     text-wrap: balance;
- }
+}
 
- h1 span{
-    color:var(--action);
- }
- /* Styles for 3 boxes section */
- .article-container {  /* This is the invisible section around the articles */
-    display:flex;
+h1 span {
+    color: var(--action);
+}
+
+/* Styles for 3 boxes section */
+.article-container {
+    /* This is the invisible section around the articles */
+    display: flex;
     /*We want the default to be column, then use a media query for larger screens*/
     flex-direction: column;
+    justify-content: space-between;
     gap: var(--space-medium);
- }
+}
 
- article {
-     background-color: var(--base-light);
-     border-radius: var(--space-medium);
-     display:flex;
-     flex-direction:column; 
-     align-items:flex-start;
-     gap:var(--space-small);
+article {
+    background-color: var(--base-light);
+    border-radius: var(--space-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-small);
 
- }
+}
 
- article .icon {
-     width: 24px;
- }
+article .icon {
+    width: 24px;
+}
 
- article .photo {
+article .photo {
     width: 192px;
- }
- article .button{
-    margin-top:var(--space-medium);
- }
+}
 
-
-
- /* Contact Section */
- .contact{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
- }
-
- .contact form{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-    width:100%;
- }
-
- footer{
+article .button {
     margin-top: var(--space-medium);
- }
- /* Note that here we are making the ul the flex container,
+}
+
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+footer {
+    margin-top: var(--space-medium);
+}
+
+/* Note that here we are making the ul the flex container,
  not the nav. This is because the items are the <li> elements,
  and the parent of those elements is ul. This selector means
  "ul elements that are inside nav elements that are inside footer elements"  */
- footer nav ul{
-    display:flex;
-    justify-content:center;
-    gap:var(--space-medium);
- }
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-medium);
+}
 
- .copyright-bar{
-    background-color:var(--brand);
-    color:var(--white);
-    text-align:center;
-    padding:var(--space-small);
-    margin-top:var(--space-small);
- }
+.copyright-bar {
+    background-color: var(--brand);
+    color: var(--white);
+    text-align: center;
+    padding: var(--space-small);
+    margin-top: var(--space-small);
+}
 
- /* Responsive media queries - 
+/* Responsive media queries - 
  these allow us to add different styles at different sizes */
 @media only screen and (min-width: 768px) {
-    header nav ul{
-        flex-direction:row;
-        gap:var(--space-large);
-        font-size:1.2em;
+    header nav ul {
+        flex-direction: row;
+        gap: var(--space-large);
+        font-size: 1.2em;
     }
-    h1{
+
+    h1 {
         font-size: 2.5em;
     }
 
-    .contact{
-        padding:var(--space-large);
-        gap:var(--space-medium);
+    .contact {
+        padding: var(--space-large);
+        gap: var(--space-medium);
     }
 }
+
 @media only screen and (min-width: 1024px) {
-    .hero{
-        padding:var(--space-xl);
+    .hero {
+        padding: var(--space-xl);
     }
 
-    h1{
-        font-size:3em;
+    h1 {
+        font-size: 3em;
     }
 
-     .article-container {
-        flex-direction:row;
-     }
+    .article-container {
+        flex-direction: row;
+    }
 
-     .contact form{
-        max-width:50%;
-     }
+    .contact form {
+        max-width: 50%;
+    }
 }
