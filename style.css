@@ -108,9 +108,6 @@ select {
 .button {
     border-radius: 4px;
     background-color: #b0c4b1;
-    /* I can combine root variables with combo rules!
-    Here I'm setting top/bottom to small, and left/right
-    to the medium space setting. */
     padding: var(--space-small) var(--space-medium);
     text-decoration: none;
     color: black;
@@ -144,14 +141,13 @@ header {
     width: auto;
 }
 
-
-/* Default for mobile - we'll add a media query
- to change the direction to 'row' on bigger screens */
 header nav ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
+
+
 
 /* create hover that changes color and underlines. 
 Underline is hidden until cursor touches */ 
@@ -194,6 +190,7 @@ main {
     justify-content: center;
     padding: var(--space-medium);
 }
+
 
 /* Styles for hero section */
 .hero {

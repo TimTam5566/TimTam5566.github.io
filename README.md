@@ -12,8 +12,13 @@
 - [ ] Functional Contact Form
 - [ ] "Projects" section
 - [ ] Links to external sites, e.g. GitHub and LinkedIn.
+I have included a photo of a painting (I dont actually have many photos of myself), but will attach a profile photo at a later stage. 
+On the home page I have an About Me section with general info about myself as well as a what I do for fun and Career so Far. 
+I also have a section that at the moment is named Languages? but I want to rename but have no Idea what to call it. There is responsive 
+navigation at the top that when hovered over changes colour and is underlined This was fun to create. The navigation leads to a projects page 
+that is still under construction and to a contact form that is functioning. There is Icons for LinkedIn and GitHub with links to both pages 
+(my linked in needs updating) Page is structures with mainly flex boxes 
 
-​
 ### Technical
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
 - [ ] At least 2 web pages.
@@ -21,6 +26,8 @@
 - [ ] Deployed on GitHub pages.
 - [ ] Implements responsive design principles.
 - [ ] Uses semantic HTML.
+I have 3 pages that are all linked to the navigation buttons at the top of the page. Header and footer are on all pages.
+Version control using git with regular commit and push to Github. 
 
 ### Bonus (optional)
  Add a short paragraph describing the features below, if you included any. 
@@ -34,5 +41,5 @@
 > 
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
-####  image_title_goes_here 
-![Put a description of your image here](./relative_path_to_file)Project Website HTML CSS
+####  Dragonfly 
+![Painting of a dragonfly hovering above a flower bed in pastel colours of green, pink, orage, blue and green.](images/images/dragonfly.jpg)Project Website HTML CSS
