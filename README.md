@@ -26,8 +26,12 @@ that is still under construction and to a contact form that is functioning. Ther
 - [ ] Deployed on GitHub pages.
 - [ ] Implements responsive design principles.
 - [ ] Uses semantic HTML.
-I have 3 pages that are all linked to the navigation buttons at the top of the page. Header and footer are on all pages.
-Version control using git with regular commit and push to Github. 
+I have 3 pages, Home, Projects and Header. Header and footer are on all pages. 
+Nav buttons on all pages and footer on all pages. Version controlled with Git
+and deployed on GitHub pages. Initial colors needed to be changed as they did not meet accessability 
+requirement. Elements can be accessed with tab button on desktob. Would have liked the header to 
+stay visible when scrolling but still working on this. Used CSS from course as a base for building and 
+exploring the project allow me to understand what all the components where for and 
 
 ### Bonus (optional)
  Add a short paragraph describing the features below, if you included any. 

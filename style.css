@@ -129,6 +129,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: var(--space-small) var(--space-medium) 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; /* for contrast */
+    z-index: 1000; /* Keeps it above other content */
 }
 
 .logo {
@@ -150,7 +154,8 @@ header nav ul {
 
 
 /* create hover that changes color and underlines. 
-Underline is hidden until cursor touches */ 
+Underline is hidden until cursor touches then appears 
+from left to right*/ 
 nav a {
   color: #4a5759; 
   font-weight: 600;
