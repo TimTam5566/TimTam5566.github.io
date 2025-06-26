@@ -51,10 +51,65 @@ when scrolling on all platforms. Nav (menu) elements stack when on mobile or tab
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.
 Hover states on nav menu items that change color and underline when hovering or selecting. Sticky header to allow header to remain visable 
 when scrolling on all platforms.  
- 
+ png
 >You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 Hover states on nav menu items that change color and underline when hovering or selecting. Sticky header to allow header to remain visable 
 when scrolling on all platforms.
 
 ####  Dragonfly 
 ![Painting of a dragonfly hovering above a flower bed in pastel colours of green, pink, orage, blue and green.](images/images/dragonfly.jpg)Project Website HTML CSS
+
+### Wireframe
+![WF 1](./wireframes/portfolio_wireframe.png)
+
+### Desk Top Screenshots home page
+![Home 1](./screenshots/dt_home_page_1.png)
+![Home 2](./screenshots/dt_home_page_2.png)
+![Home 3](./screenshots/dt_home_page_3.png)
+
+### Desk Top Project Page Screenshots
+![Project 1](./screenshots/dt_projects_page_1.png)
+
+### Desk Top Contacts Page Screenshots
+![Contact 1](.screenshots/dt_contact_page_1.png)
+
+### Mobile Devices Home Page Screenshots
+![Ph 1](./screenshots/ph_home_page_1.png)
+![Ph 2](./screenshots/ph_home_page_2.png)
+![Ph3](./screenshots/ph_home_page_3.png)
+![Ph 4](./screenshots/ph_home_page_4.png)
+![Tab 1](./screenshots/tab_home_page_2.png)
+![Tab 2](./screenshots/tab_home_page_2.png)
+![Tab 3](./screenshots/tab_home_page_3.png)
+
+### Mobile Devices Project Page Screenshots
+![Ph 1](./screenshots/ph_home_page_1.png)
+![Ph 2](./screenshots/ph_home_page_2.png)
+![Ph 3](./screenshots/ph_home_page_3.png)
+![Ph 4](./screenshots/ph_home_page_4.png)
+![Tab](./screenshots/tab_home_page_1.png)
+![Tab](./screenshots/tab_home_page_2.png)
+![Tab](./screenshots/tab_home_page_3.png)
+
+### Mobile Devices Contact Page Screenshots
+![Ph](./screenshots/ph_contact_page.png)
+![Tab](./screenshots/tab_contact_full_page.png)
+
+### Menu Hover Screenshots
+![DT 1](./screenshots/dt_home_page_menu_response.jpg)
+![DT 2](./screenshots/dt_projects_page_menu%20response.jpg)
+![DT 3](.screenshots/dt_contact_page_menu_response.jpg)
+![Ph 1](./screenshots/ph_home_page_hover.jpg)
+![Ph 2](./screenshots/ph_project_page_hover.jpg)
+![Ph 3](./screenshots/ph_contact_page_hover.jpg)
+![Tab 1](./screenshots/tab_home_menu_hover.jpg)
+![Tab 2](./screenshots/tab_project_menu_hover.jpg)
+![Tab 3](./screenshots/tab_contact_menu_hover.jpg)
+
+
+
+
+
+
+
+
