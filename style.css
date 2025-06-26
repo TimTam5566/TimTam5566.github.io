@@ -203,8 +203,8 @@ main {
     color: var(--white);
     display: flex;
     flex-direction: row;
-    align-items: start;
     justify-content: space-between;
+    align-items: flex-start;
     border-radius: var(--space-small);
     padding: var(--space-medium);
     gap: var(--space-small);
