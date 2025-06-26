@@ -141,7 +141,7 @@ header {
 }
 
 .photo {
-    max-height: 200px;
+    max-height: 100px;
     width: auto;
 }
 
@@ -203,11 +203,13 @@ main {
     color: var(--white);
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: start;
+    justify-content: space-between;
     border-radius: var(--space-small);
-    padding: var(--space-large);
-    gap: var(--space-medium);
+    padding: var(--space-medium);
+    gap: var(--space-small);
 }
+
 /* 2em = 200% of parent size*/
 h1 {
     font-size: 2em;
@@ -228,9 +230,8 @@ article {
     border-radius: var(--space-medium);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
     gap: var(--space-small);
-
 }
 
 article .icon {
@@ -238,7 +239,7 @@ article .icon {
 }
 
 article .photo {
-    width: 192px;
+    width: 128px;
 }
 
 article .button {
