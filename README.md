@@ -1,7 +1,7 @@
 # TimTam5566.github.io
-# Tammy_Healy- Portfolio Task
+# Tammy_Healy - Portfolio Task
 ​
-[My portfolio site](TimTam5566.github.io)
+[My portfolio site](https://github.com/TimTam5566/TimTam5566.github.io)
 ​
 ## Project Requirements
 
